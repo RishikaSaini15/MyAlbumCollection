@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MyAlbumsList</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <style>
+      body {
+        background-image: url(./image.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        max-width:100%;
+        height:auto;
+      }
+    </style>
+</head>
+<body>
+<p>SEARCH YOUR FAVOURITES!!!</p>
+<form action="/results.php" method="get">
+  <fieldset>
+    <legend>..MyAlbumCollection..</legend>
+      <input type="text" id="search" name="search"><br>
+    <br>
+    <label for="pages">Results Per Page :</label>
+      <select name="pages">
+        <option value="25" selected>25</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="200">200</option>
+      </select><br>
+      <br>
+      US <input type="checkbox" name="country[]" value="us">
+      UK <input type="checkbox" name="country[]" value="uk">
+      FR <input type="checkbox" name="country[]" value="fr">
+      DE <input type="checkbox" name="country[]" value="de">
+      CA <input type="checkbox" name="country[]" value="ca">
+      AU <input type="checkbox" name="country[]" value="au">
+      <br>
+      <br>
+      <input type="submit" name = "submit" value="submit">
+    </fieldset>
+  </form>
+</body>
+</html>
